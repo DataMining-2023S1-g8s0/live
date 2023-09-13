@@ -41,12 +41,12 @@
 					<!-- Moodle -->
 					<li>
 						<div class="navbar-header">
-							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=182859" target="_blank"><img height="18pt" src="../../../style/misc/img/moodle_logo_on_blue.gif" /></a>
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=199951" target="_blank"><img height="18pt" src="../../../style/misc/img/moodle_logo_on_blue.gif" /></a>
 						</div>						
 					</li>
 					<li>
 						<div class="navbar-header">
-							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=182859" target="_blank"><img height="18pt" src="../../../style/misc/img/slack_logo.png" /></a>
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=199951" target="_blank"><img height="18pt" src="../../../style/misc/img/slack_logo.png" /></a>
 						</div>						
 					</li>
 				</ul>
@@ -177,7 +177,7 @@ Next we cover installation of python using either a full <a href="https://www.an
 <li>diagramming tools (such as MS Visio) for system specification</li>
 <li>ETL tools (such as <a href="https://www.hitachivantara.com/en-us/products/data-management-analytics.html">Pentaho Kettle, now part of Hitachi's DataOps suite</a>) for acquiring data, often from operational databases and sometimes from data warehouses</li>
 <li>SQL scripts for combining and transforming the data en route (e.g., generating statistical summaries)</li>
-<li>Proprietary statistical packages (such as <a href="https://www.sas.com/en_us/software/enterprise-miner.html">SAS</a>, <a href="https://www.ibm.com/us-en/marketplace/spss-modeler">SPSS (now acquired by IBM)</a>, etc.) for the more complex analyses and visualisations</li>
+<li>Proprietary statistical packages (such as <a href="https://www.sas.com/en_us/software/enterprise-miner.html">SAS</a>, <a href="https://www.ibm.com/products/spss-modeler">SPSS (now acquired by IBM)</a>, etc.) for the more complex analyses and visualisations</li>
 <li>A mixture of languages and technologies (shell scripts, Java, C++, Javascript, etc.) to build the overall application that is deployed in production, e.g., to provide a web application for fraud checking.</li>
 </ul>
 <p>Nowadays we distinguish between two data mining usage patterns:</p>
@@ -186,13 +186,13 @@ Next we cover installation of python using either a full <a href="https://www.an
 <li><em>adding value</em> by deploying the analysis procedures thus discovered to data in production, and integrating it with business processes, <em>by software engineers</em></li>
 </ul>
 <p>Traditional approaches introduce a lot of complexity (in the form of interfaces and context shifts) and require significant know-how, and are not optimal for either usage pattern.</p>
-<p>Many analysts like to use a single, GUI-based tool for their workflows. ISL <code>Clementine</code> (spun out from the University of Birmingham in the 1990s) was the tool that introduced the <em>workflow</em> metaphor and is now available as <a href="https://www.ibm.com/us-en/marketplace/spss-modeler">IBM SPSS Modeler Professional</a>. Such tools are expensive, which has encouraged competition from lower price/free equivalents. <a href="https://www.knime.org">KNIME</a> is <em>one of</em> its (commercial) open source competitors (others include <a href="https://rapidminer.com/">RapidMiner</a> and <a href="https://orange.biolab.si/">orange</a>), using the same template as the original product but with enhanced features and performance.</p>
-<p>More recently, the <a href="https://cran.r-project.org/doc/manuals/R-intro.pdf">R</a> (and <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">python</a>) data science communities have embraced the <a href="https://www.wikipedia.org/wili/Literate_programming">literate programming</a> paradigm of <a href="https://yihui.name/knitr">Knitr</a> and <a href="https://jupyter.org">Jupyter</a> <em>notebooks</em> which allows them to script function calls to powerful libraries, weaving this code with its own output (including graphs) and text that is typeset as LaTeX or markdown, respectively. Such code can be extracted and inserted into applications using Big Data frameworks with relatively little effort.</p>
+<p>Many analysts like to use a single, GUI-based tool for their workflows. ISL <code>Clementine</code> (spun out from the University of Birmingham in the 1990s) was the tool that introduced the <em>workflow</em> metaphor and is now available as <a href="https://www.ibm.com/products/spss-modeler">IBM SPSS Modeler Professional</a>. Such tools are expensive, which has encouraged competition from lower price/free equivalents. <a href="https://www.knime.com">KNIME</a> is <em>one of</em> its (commercial) open source competitors (others include <a href="https://rapidminer.com/">RapidMiner</a> and <a href="https://orangedatamining.com/">orange</a>), using the same template as the original product but with enhanced features and performance.</p>
+<p>More recently, the <a href="https://cran.r-project.org/doc/manuals/R-intro.pdf">R</a> (and <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">python</a>) data science communities have embraced the <a href="https://www.wikipedia.org/wili/Literate_programming">literate programming</a> paradigm of <a href="https://yihui.org/knitr">Knitr</a> and <a href="https://jupyter.org">Jupyter</a> <em>notebooks</em> which allows them to script function calls to powerful libraries, weaving this code with its own output (including graphs) and text that is typeset as LaTeX or markdown, respectively. Such code can be extracted and inserted into applications using Big Data frameworks with relatively little effort.</p>
 <p>Both the R and python data science communities are very active and solutions such as KNIME now position themselves as <em>platforms</em> that can be extended with user-provided modules written in a variety of languages, notably including R and python.</p>
 <p>Therefore, we will use <a href="https://jupyter.org">Jupyter</a> as the primary learning tool, both for sourcing the data and for the data mining process itself.</p>
 <p><a name="Installation"></a></p>
 <h2>Installation</h2>
-<p>While any Python 3.8 distribution should be suitable for our needs, we recommend you either install a full <a href="https://www.anaconda.com/products/individual">anaconda</a> distribution (about 3.1 GB) or a reduced <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> distribution (about 248MB).</p>
+<p>While any Python 3.8 distribution should be suitable for our needs, we recommend you either install a full <a href="https://www.anaconda.com/products/individual">anaconda</a> distribution (about 3.1 GB) or a reduced <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> distribution (about 250MB).</p>
 <p>Which should you choose? To be honest, it doen't really matter but </p>
 <ul>
 <li>Want to get python development up and running quickly while suffering poor connection issues &mdash; use <code>miniconda</code>.</li>
@@ -205,26 +205,32 @@ Next we cover installation of python using either a full <a href="https://www.an
 <p>Finally, there are other options &mdash; all of which should be suitable for this course's needs. However, while we are happy to help sort out issues our priority will be sorting issues in <code>anaconda</code> and <code>miniconda</code>.</p>
 <ul>
 <li>Standard Python from <a href="https://www.python.org/">Python Software Foundation</a>.</li>
-<li>On OS X using <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a> of <a href="https://www.macports.org/">MacPorts</a>, see <a href="https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/">Thoughts on macOS Package Managers</a>.</li>
+<li>On MacOS using <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a> or <a href="https://www.macports.org/">MacPorts</a>, see <a href="https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/">Thoughts on macOS Package Managers</a>.</li>
 <li><a href="https://assets.enthought.com/downloads/">Enthought Deployment Manager (EDM)</a>.</li>
 </ul>
 <h3>Anaconda (Full python distribution)</h3>
 <p>To install anaconda:</p>
 <ul>
 <li>Pick any suitable 64-bit, Python 3.8 installer for you system from <a href="https://www.anaconda.com/products/individual">anaconda</a>.</li>
-<li>Run installer and default options should work for your system. Under OS X, I typically install into my home directory, so will end up with a folder <code>~/anacond3</code>.</li>
+<li>Run installer and default options should work for your system. Under MacOS, I typically install into my home directory, so will end up with a folder <code>~/anacond3</code>.</li>
 </ul>
 <h3>Miniconda (python distribution)</h3>
 <p>To install miniconda:</p>
 <ul>
-<li>Pick any suitable 64-bit, Python 3.8 installer for you system from <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.</li>
-<li>Run installer and default options should work for your system. Under OS X, I typically install into my home directory, so will end up with a folder <code>~/miniconda3</code>.</li>
+<li>Pick any suitable 64-bit, Python 3.8+ installer for you system from <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.</li>
+<li>Run installer and default options should work for your system. Under MacOS, I typically install into my home directory, so will end up with a folder <code>~/miniconda3</code>.</li>
 </ul>
 <h3>Verify Installation</h3>
-<p>Regardless of anaconda/miniconda option you picked, once installed you should be able to run python from the command line </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>activate
-python
+<p>Regardless of anaconda/miniconda option you picked, once installed you should be able to run python from the command line.</p>
+<p>On MS Windows, you should start the <code>Anaconda Prompt</code> app, with no need to activate conda (since it has been added to the prompt in that app).</p>
+<p>On other platforms (Linux and MacOS, say) you can start your preferred terminal and activate conda yourself, like this</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>activate
+</code></pre></div></td></tr></table></div>
+
+
+<p>Either way, you should see that your prompt has been prefixed with <code>(base)</code>, indicating that the default (base) environment has been activated.</p>
+<p>Students should then check that <code>python</code> is avalilable:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python
 </code></pre></div></td></tr></table></div>
 
 
@@ -232,8 +238,8 @@ python
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Python<span class="w"> </span><span class="m">3</span>.8.11<span class="w"> </span><span class="o">(</span>default,<span class="w"> </span>Aug<span class="w">  </span><span class="m">3</span><span class="w"> </span><span class="m">2021</span>,<span class="w"> </span><span class="m">15</span>:09:35<span class="o">)</span><span class="w"> </span>
-<span class="o">[</span>GCC<span class="w"> </span><span class="m">7</span>.5.0<span class="o">]</span><span class="w"> </span>::<span class="w"> </span>Anaconda,<span class="w"> </span>Inc.<span class="w"> </span>on<span class="w"> </span>linux
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Python<span class="w"> </span><span class="m">3</span>.9.16<span class="w"> </span><span class="p">|</span><span class="w"> </span>packaged<span class="w"> </span>by<span class="w"> </span>conda-forge<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>main,<span class="w"> </span>Feb<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">2023</span>,<span class="w"> </span><span class="m">21</span>:39:03<span class="o">)</span>
+<span class="o">[</span>GCC<span class="w"> </span><span class="m">11</span>.3.0<span class="o">]</span><span class="w"> </span>on<span class="w"> </span>linux
 Type<span class="w"> </span><span class="s2">&quot;help&quot;</span>,<span class="w"> </span><span class="s2">&quot;copyright&quot;</span>,<span class="w"> </span><span class="s2">&quot;credits&quot;</span><span class="w"> </span>or<span class="w"> </span><span class="s2">&quot;license&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>information.
 &gt;&gt;&gt;<span class="w"> </span>
 </code></pre></div></td></tr></table></div>
@@ -263,7 +269,7 @@ Type<span class="w"> </span><span class="s2">&quot;help&quot;</span>,<span class
 
 
 <h3>Side Note: Environments</h3>
-<p>Both <code>conda</code> and <code>pip</code> support the idea of environments where within the one python distributions you might have a multiple of environments. This is to help avoid version conflicts between modules.  <code>aanconda</code> and <code>miniconda</code> both start with one default environment called <code>root</code>.  If you wish to use environments, you need to apply two steps: 1) create an environment using </p>
+<p>Both <code>conda</code> and <code>pip</code> support the idea of environments where within one python distribution you might have many environments. This is to help avoid version conflicts between modules.  <code>aanconda</code> and <code>miniconda</code> both start with one default environment called <code>base</code>.  If you wish to use environments, you need to apply two steps: 1) create an environment using </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">data_mining</span>
 </code></pre></div></td></tr></table></div>
 
@@ -273,7 +279,7 @@ Type<span class="w"> </span><span class="s2">&quot;help&quot;</span>,<span class
 </code></pre></div></td></tr></table></div>
 
 
-<p>Since all of the packages that we plan to use work are (currently, Jan 2021) compatible we won't need to use multiple environments but they are a good idea and if you are interested there is a nice introduction at <a href="https://astrobiomike.github.io/unix/conda-intro">
+<p>Since all of the packages that we plan to use are (currently, Sep 2023) compatible we won't need to use multiple environments but they are a good idea (e.g., if you already use conda packages for other purposes) and if you are interested there is a nice introduction at <a href="https://astrobiomike.github.io/unix/conda-intro">
 Happy Belly Bioinformatic</a>.</p>
 <h3>Packages that need installing if using <code>miniconda</code> (they are already included in anaconda)</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
@@ -288,7 +294,7 @@ Happy Belly Bioinformatic</a>.</p>
 </code></pre></div></td></tr></table></div>
 
 
-<p>(last update Feb 11)</p>
+<p>(last update 2023-04-19)</p>
 <h3>Packages that need installing if using <code>miniconda</code> or <code>anaconda</code></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
 <span class="normal">2</span>
@@ -308,7 +314,7 @@ Happy Belly Bioinformatic</a>.</p>
 </code></pre></div></td></tr></table></div>
 
 
-<p>(last update 2021-09-03)</p>
+<p>(last update 2023-04-19)</p>
 		
 		<ul class="pager">
 			
