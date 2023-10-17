@@ -1,0 +1,5 @@
+https://python.plainenglish.io/interactive-visualizations-with-pandas-seaborn-and-ipywidgets-173e5d7d6a5e
+https://blog.logrocket.com/data-visualization-python-seaborn/
+https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
+https://www.mygreatlearning.com/blog/seaborn-tutorial/
+
