@@ -2,6 +2,9 @@
 .DS_Store
 ._.DS_Store
 
+# files that belong in private and not in PUBLIC
+topics/08-Classification1/02-Practical/files/regenerateLinks.sh
+
 # Resources that are not for sharing with the students
 resources/Algae_Blooms_-_EDA_code_snippets.zip
 resources/Marks_code_snippets.zip
