@@ -44,5 +44,8 @@ resources/DT_code_snippets.zip
 resources/NB_KNN_code_snippets.zip
 resources/pima-indians-diabetes.csv
 resources/playTennis.csv
+resources/GMM_DBSCAN_code_snippets.zip
+resources/KM_GMM_code_snippets.zip
+resources/complexDataForClustering.npy
 
 topics/06-Data_Modelling/01-Data_Modelling_-_Introduction/files/
